@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Week3</title>
+</head>
+<body>
+    <a href="home.html" id="home"><span class="material-symbols-outlined">arrow_back</span>Back to Home</a>
+    <section class="container">
+        <div class="text">
+            <h1>More CSS | Media Queries | Flex</h1>
+            <h2>From this lesson, I learnt about:</h2>
+            <br>
+            <div class="collapsible_non-technical">
+                <input type="checkbox" id="collapsible-head_non-technical">
+                <label for="collapsible-head_non-technical">Non-Technical Learning <span class="material-symbols-outlined">expand_more</span></label>
+                <div class="collapsible-text_non-technical">
+                    <ul>
+                        <li><b>Wireframe:</b> Like a blueprint, conveying layout, functionality, content types, and information hierarchy for websites and applications.</li>
+                        <li><b>Wireframes ARE NOT:</b> Visual Design, Typography, Icongraphy, Photography</li>
+                        <li><b>Wireframes CAN:</b> Mind maps rapidly generate ideas, facilitate discussions, display content hierarchy, and establish essential functionality.</li>
+                        <li><b>Static Wireframes:</b>
+                            <br><b>Pros:</b> Usually quick to create | Variety of tools and software
+                            <br><b>Cons:</b> Not responsive
+                        </li>
+                        <li><b>Low Fidelity Wireframes:</b>
+                            <br><b>Pros:</b> Can quickly creating and brainstorming multiple ideas without immediate commitment, often in a simple sketch-like form.
+                            <br><b>Cons:</b> Might not have enough detail for every situation
+                        </li>
+                        <li><b>High Fidelity Wireframes:</b>
+                            <br><b>Pros:</b> High fidelity prototypes offer greater detail and closely resemble the final layout compared to low fidelity versions.
+                            <br><b>Cons:</b> Stakeholders might confuse with design
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="collapsible_technical-html">
+                <input type="checkbox" id="collapsible-head_technical-html">
+                <label for="collapsible-head_technical-html">Technical Learning (HTML)<span class="material-symbols-outlined">expand_more</span></label>
+                <div class="collapsible-text_technical-html">
+                    <ul>
+                        <li><b>form element: </b>used to create an HTML form for user input</li>
+                        <li><b>input element: </b>Can be displayed in many ways, depending on the type attribute:
+                            <br>type=<b>"text"</b>	(Displays a single-line text input field)
+                            <br>type=<b>"radio"</b> (Displays a radio button (for selecting one of many choices))
+                            <br>type=<b>"checkbox"</b> (Displays a checkbox (for selecting zero or more of many choices))
+                            <br>type=<b>"submit"</b> (Displays a submit button (for submitting the form))
+                            <br>type=<b>"button"</b> (Displays a clickable button)
+                        </li>
+                        <li><b>label element: </b>
+                            The <b>label</b> element enhances accessibility by providing vocal cues for screen-reader users, aids users with small interactive elements by allowing text-click interactions, and requires the <b>"for" attribute</b> to be linked with the corresponding <b>input</b> element's "id."</li>
+                        <li><b>footer element: </b>defines a footer for a document or section</li>
+                        <li><b>nav element: </b>defines a set of navigation links</li>
+                        <li><b>aside element: </b>defines some content (indirectly related to the surrounding content) aside from the content it is placed in (like a sidebar)</li>
+                        <li><b>id attribute: </b>used to specify a unique id for an HTML element</li>  
+                        <li><b>class attribute: </b> used to specify a class for a HTML element or <em>MULTIPLE HTML elements</em> that share the same class</li>                   
+                    </ul>
+                </div>
+            </div>
+
+            <div class="collapsible_technical-css">
+                <input type="checkbox" id="collapsible-head_technical-css">
+                <label for="collapsible-head_technical-css">Technical Learning (CSS)<span class="material-symbols-outlined">expand_more</span></label>
+                <div class="collapsible-text_technical-css">
+                    <ul>
+                        <li><b>Descendant Selector</b></li>
+                        <li><b>Grouping Selector</b></li>
+                        <li><b>Inheritance: </b>CSS styles can be inherited from the parent elements</li>
+                        <li><b>Specificity: </b>Specificity determines how browsers decide which CSS rule takes precedence (Universal, type, class, id)</li>
+                        <li><b>Cascade: </b>Style declarations cascade and are read from top to bottom</li>
+                        <li><b>!important: </b>The !important keyword overrides source order and specificity (Added just before the end of the rule declaration before semicolon(;))</li>
+                        <li><b>Media Queries: </b>Used to modify the CSS of a site depending on quanlities such as viewport size or device type</li>
+                        <li><b>@media: </b>Applies one or more CSS properties based on the result of a media query</li>
+                        <li><b>min-width: </b>If the minimum width of the viewport is at least the specific width or wider, then the media query is true</li>
+                        <li><b>max-width: </b>If the maximum width of the viewport is at no more than the specified width, or it's narrower then the media query is true</li>
+                        <li><b>Relative Position: </b>Moves elements around relative to where they would appear on the page</li>
+                        <li><b>Absolute Position: </b>Offset is relative to the entire browser window instead of the original position of the element</li>
+                        <li><b>Fixed Position: </b>Fixed elements don't scroll with the rest of the page. Commonly known as sticky elements</li>
+                        <li><b>Z-Index: </b>z-index property lets you control the depth of elements on the page (z-index work <b><em>ONLY</em> on elements with a position property set to absolute, fixed, or relative</b>)</li>
+                        <li><b>Negative Z-Index: </b>Go farther into the page (behind)</li>
+                        <li><b>Positive Z-Index: </b>Comes out of the page</li>
+                        <li><b>Flex: </b>Apply flexbox to get flexible layouts</li>
+                        <li><b>Flex Properties: </b>Learn more about them <a href="https://flexboxfroggy.com/">here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="wk03-pic.jpg" alt="Web Developer Image" id="image">
+        </div>
+    </section>
+</body>
+</html>

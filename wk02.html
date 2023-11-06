@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Week2</title>
+</head>
+<body>
+    <a href="home.html" id="home"><span class="material-symbols-outlined">arrow_back</span>Back to Home</a>
+    <section class="container">
+        <div class="text">
+            <h1>SEMANTIC HTML</h1>
+            <h2>From this lesson, I learnt about:</h2>
+            <br>
+            <div class="collapsible_non-technical">
+                <input type="checkbox" id="collapsible-head_non-technical">
+                <label for="collapsible-head_non-technical">Non-Technical Learning <span class="material-symbols-outlined">expand_more</span></label>
+                <div class="collapsible-text_non-technical">
+                    <ul>
+                        <li>Name your files using lower-case</li>
+                        <li>Replace spaces with dashes "-" instead when naming files</li>
+                        <li>In web development, <em>ALWAYS</em> ensure that you have theproper file extension</li>
+                        <li>A semantic element clearly describes its meaning to both the browser and the developer</li>
+                        <li>Some rules to follow when making IDs and class names:
+                            <ul id="rules">
+                                <li>Describe the content, not the presentation ("warning", not "redbox"). </li>
+                                <li>Use all lowercase, and hyphens when needed for readability("header-info", not "headerInfo"). </li>
+                                <li>Use hyphens to show that a class or ID is part of something else. (e.g."footer", "footer-copyright", and "footer-logo").</li>
+                                <li>Preferably <em><b>NO camel case</b></em></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="collapsible_technical-html">
+                <input type="checkbox" id="collapsible-head_technical-html">
+                <label for="collapsible-head_technical-html">Technical Learning (HTML)<span class="material-symbols-outlined">expand_more</span></label>
+                <div class="collapsible-text_technical-html">
+                    <ul>
+                        <li><b>article element: </b>Specifies independent, self-contained content that should make sense on its own, and be possible to distribute it independently from the rest of the web site</li>
+                        <li><b>section element: </b>Defines section in a document</li>
+                        <li><b>header element: </b>represents a container for introductory content or a set of navigational links</li>
+                        <li><b>footer element: </b>defines a footer for a document or section</li>
+                        <li><b>nav element: </b>defines a set of navigation links</li>
+                        <li><b>aside element: </b>defines some content (indirectly related to the surrounding content) aside from the content it is placed in (like a sidebar)</li>
+                        <li><b>id attribute: </b>used to specify a unique id for an HTML element</li>  
+                        <li><b>class attribute: </b> used to specify a class for a HTML element or <em>MULTIPLE HTML elements</em> that share the same class</li>                   
+                    </ul>
+                </div>
+            </div>
+
+            <div class="collapsible_technical-css">
+                <input type="checkbox" id="collapsible-head_technical-css">
+                <label for="collapsible-head_technical-css">Technical Learning (CSS)<span class="material-symbols-outlined">expand_more</span></label>
+                <div class="collapsible-text_technical-css">
+                    <ul>
+                        <li><b>Colors</b> are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</li>
+                        <li><b>ID Attribute: </b>The "#" symbol is how you use to style the unique element of that ID</li>
+                        <li><b>Class Attribute: </b>The "." symbol is how you use to style elements (can be different types) of that class</li>
+                        <li><b>Pseudo Classes: </b>
+                            <br>a:link { /* unvisited link */ color: red; }
+                            <br>a:visited { /* visited link */ color: blue; }
+                            <br>a:hover { /* moused over link */ color: green; }
+                            <br>a:active { /* current link */ color: purple; }
+                            <br>a:focus { /* focused link */ color: purple;} </li>
+                        <li><b>Font-size: </b>
+                            <br>font-size: 1.5em; (The "em" unit lets you set the size of the text relative to the text around it.)
+                            <br>font-size: 12px;
+                            <br>font-size: 100%;
+                            <br>font-size: larger;
+                        </li>
+                        <li><b>Font-style: </b>
+                            <br>font-style: italic;
+                            <br>font-style: normal;
+                        </li>
+                        <li><b>Font-weight: </b>
+                            <br>font-weight: normal;
+                            <br>font-weight: bold;
+                            <br>font-weight: lighter;
+                            <br> font-weight: 900;
+                        </li>
+                        <li><b>Font "shorthand" property:</b>
+                            <br>table { font: italic bold 10px sansserif; }
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="wk02-pic.png" alt="Web Developer Image" id="image">
+        </div>
+    </section>
+</body>
+</html>
