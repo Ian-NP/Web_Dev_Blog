@@ -53,7 +53,7 @@ body{
     width: 75%;
 }
 
-img {
+.image img {
     object-fit: cover;
     width: 475px;
     height: 375px;
@@ -61,6 +61,8 @@ img {
     border-radius: 100px;
     box-shadow: 4px 10px 10px 1px #888888;
 }
+
+
 
 .text {
     margin-right: 50px;;
@@ -302,6 +304,13 @@ img {
 
 .collapsible-text_technical-css li{
     margin-bottom: 15px;
+}
+
+.collapsible-text_technical-css img{
+    width:100%;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /*----------------------------------------------------------------------------------------------*/
