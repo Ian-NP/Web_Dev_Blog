@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Week1</title>
+</head>
+<body>
+    <a href="index.html" id="home"><span class="material-symbols-outlined">arrow_back</span>Back to Home</a>
+    <section class="container">
+        <div class="text">
+            <h1>Putting it all Together</h1>
+            <h2>From this lesson, I learnt about:</h2>
+            <br>
+            <div class="collapsible_non-technical">
+                <input type="checkbox" id="collapsible-head_non-technical">
+                <label for="collapsible-head_non-technical">Non-Technical Learning <span class="material-symbols-outlined">expand_more</span></label>
+                <div class="collapsible-text_non-technical">
+                    <p>Why we need responsive images?</p>
+                    <ul>
+                        <li>Auto-resize based on screen size</li>
+                        <li>Better Performance (Loading higher resolution images only when needed)</li>
+                        <li>Provide better design control depending on device</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="collapsible_technical">
+                <input type="checkbox" id="collapsible-head_technical">
+                <label for="collapsible-head_technical">Technical Learning (CSS)<span class="material-symbols-outlined">expand_more</span></label>
+                <div class="collapsible-text_technical">
+                    <ul>
+                        <li><b>"width: 100%": </b>By setting a relative unit, we make our images fluid and they will resize accordingly</li>
+                        <li><b>max-width: </b>The max-width property sets a maximum width for an element, which does not allow the width of that element to be larger than its max-width value (but it can be smaller).</li>
+                        <li><b>srcset: </b>The srcset attribute specifies the URL of the image to use in different situations.</li>                        
+                        <li><b>h1-6 element: </b> HTML headings are titles or subtitles that you want to display on a webpage.</li>
+                        <li><b>background-size: </b>Sets the size of the element's background image. The image can be left to its natural size, stretched, or constrained to fit the available space.</li>
+                        <li><b>flex-grow: </b>Specifies how much the item will grow relative to the rest of the flexible items inside the same container.</li>
+                        <li><b>flex-basis: </b>Specifies the initial length of a flexible item.</li>
+                        <li><b>flex-direction: </b>Specifies the direction of the flexible items.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="wk04-pic.jpg" alt="Web Developer Image" id="image">
+        </div>
+    </section>
+</body>
+</html>

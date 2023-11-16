@@ -131,6 +131,12 @@ img {
     font-family:Arial, Helvetica, sans-serif;
 }
 
+.collapsible-text_non-technical p{
+    padding: 0 15px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
 .collapsible_non-technical input:checked ~ .collapsible-text_non-technical {
     max-height: 300px;
     padding-top: 10px;

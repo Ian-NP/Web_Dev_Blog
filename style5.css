@@ -11,14 +11,14 @@
     vertical-align: top;
 }
 
-a{
+#home{
     text-decoration: none;
     font-size:20px;
     line-height:87px;
     color:#888888
 }
 
-a > span {
+#home > span {
     margin-top: 30px;
     margin-left: 10px;
     margin-right: 10px;
@@ -121,14 +121,15 @@ img {
 
 .collapsible-text_non-technical{
     max-height: 0px;
-    overflow: hidden;
+    overflow: scroll;
     border-radius: 4px;
     line-height: 1.4;
     position: relative;
     top: -100%;
     transition: all 0.3s ease-in-out;
-    font-weight: 600;
+    font-weight: normal;
     font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 .collapsible_non-technical input:checked ~ .collapsible-text_non-technical {
@@ -144,22 +145,27 @@ img {
     margin-top: 10px;
 }
 
-/*----------------------------------------------------------------------------------------------*/
-/* COLLAPSIBLE_TECHNICAL*/
+.collapsible-text_non-technical li{
+    margin-bottom: 30px;
+}
 
-.collapsible_technical{
+
+/*----------------------------------------------------------------------------------------------*/
+/* COLLAPSIBLE_TECHNICAL-HTML*/
+
+.collapsible_technical-html{
     max-width: 100%;
     height:100%;
     overflow:hidden;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.collapsible_technical input {
+.collapsible_technical-html input {
     display: none;
 }
 
-.collapsible_technical label{
+.collapsible_technical-html label{
     position: relative;
     font-weight: 600;
     font-size: 20px;
@@ -173,13 +179,13 @@ img {
     z-index: 1;
 }
 
-.collapsible_technical span{
+.collapsible_technical-html span{
     position: absolute;
     right: 15px;
     top: 13px;
 }
 
-.collapsible_technical label:after{
+.collapsible_technical-html label:after{
     content: "";
     position: absolute;
     right: 15px;
@@ -188,12 +194,12 @@ img {
     height: 18px;
 }
 
-.collapsible_technical input:checked + label:after{
+.collapsible_technical-html input:checked + label:after{
     transform: rotate(180deg);
     transition: all 0.3s ease-in-out;
 }
 
-.collapsible-text_technical{
+.collapsible-text_technical-html{
     max-height: 0px;
     overflow: scroll;
     border-radius: 4px;
@@ -201,33 +207,101 @@ img {
     position: relative;
     top: -100%;
     transition: all 0.3s ease-in-out;
+    font-size: 20px;
 }
 
-.collapsible_technical input:checked ~ .collapsible-text_technical {
-    max-height: 250px;
+.collapsible_technical-html input:checked ~ .collapsible-text_technical-html {
+    max-height: 300px;
     padding-top: 10px;
     padding-bottom: 20px;
     background: rgb(234, 234, 234);
 }
 
-.collapsible-text_technical ul{
+.collapsible-text_technical-html ul{
     list-style-type:disc;
     padding: 0 30px;
     margin-top: 10px;
 }
 
-.collapsible-text_technical li{
-    margin-bottom: 10px;
+.collapsible-text_technical-html li{
+    margin-bottom: 15px;
 }
 
 /*----------------------------------------------------------------------------------------------*/
+/* COLLAPSIBLE_TECHNICAL-CSS*/
 
-@media screen and (min-width: 900px) {
-    .collapsible_technical input:checked ~ collapsible-text_technical {
-        max-height: 200px;
-    }
-
-    .collapsible_non-technical input:checked ~ collapsible-text_technical {
-        max-height: 400px;
-    }
+.collapsible_technical-css{
+    max-width: 100%;
+    height:100%;
+    overflow:hidden;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
+
+.collapsible_technical-css input {
+    display: none;
+}
+
+.collapsible_technical-css label{
+    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+    background: rgb(232, 232, 232);
+    color: rgb(200, 32, 200);
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible_technical-css span{
+    position: absolute;
+    right: 15px;
+    top: 13px;
+}
+
+.collapsible_technical-css label:after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+}
+
+.collapsible_technical-css input:checked + label:after{
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.collapsible-text_technical-css{
+    max-height: 0px;
+    overflow: scroll;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+.collapsible_technical-css input:checked ~ .collapsible-text_technical-css {
+    max-height: 300px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background: rgb(234, 234, 234);
+}
+
+.collapsible-text_technical-css ul{
+    list-style-type:disc;
+    padding: 0 30px;
+    margin-top: 10px;
+}
+
+.collapsible-text_technical-css li{
+    margin-bottom: 15px;
+}
+
+/*----------------------------------------------------------------------------------------------*/
