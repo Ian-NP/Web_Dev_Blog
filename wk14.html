@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style9.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Week14</title>
+</head>
+<body>
+    <a href="index.html" id="home"><span class="material-symbols-outlined">arrow_back</span>Back to Home</a>
+    <section class="container">
+        <div class="text">
+            <h1>Lottie Animation</h1>
+            <h2>From this lesson, I learnt about:</h2>
+            <br>
+            <div class="collapsible_non-technical">
+                <input type="checkbox" id="collapsible-head_non-technical">
+                <label for="collapsible-head_non-technical">Lottie Animation:<span class="material-symbols-outlined">expand_more</span></label>
+                <div class="collapsible-text_non-technical">
+                    <ol>
+                        <li><b>Definition:</b>
+                            <ul>
+                                <li>Lottie is a JSON-based animation file format that allows designers to ship animations easily on any platform.</li>
+                            </ul>
+                        </li>
+                        <li><b>Usage: </b>
+                            <ul>
+                                <li>Lottie animations can be used on websites or mobile platforms to enhance interactivity and visual appeal.</li>
+                            </ul>
+                        </li>
+                        <li><b>Workflow:</b>
+                            <ul>
+                                <li>Lottie files are often created from SVG or After Effects animations.</li>
+                                <li>Ready-made SVG files or resources from platforms like LottieFiles can be used without needing to create animations from scratch./li>
+                            </ul>
+                        </li>
+                        <li><b>Implementation:</b>
+                            <ul>
+                                <li>Include the main Lottie player script in HTML.</li>
+                                <li>Reference the hosted LottieFiles JSON file in your HTML.</li>
+                                <li>Add JavaScript to control the behavior of the Lottie animation.</li>
+                            </ul>
+                        </li>
+                        <li><b>Converting SVG to Lottie:</b>
+                            <ul>
+                                <li>LottieFiles provides a tool for converting SVG files to Lottie animations.</li>
+                                <li>SVG files can be obtained from various sources like design software or online repositories.</li>
+                            </ul>
+                        </li>
+                        <li><b>Lottie Editor:</b>
+                            <ul>
+                                <li>Allows modification of animation dimensions, colors, and other properties.</li>
+                                <li>Limited by the complexity of the original SVG and preset animations.</li>
+                                <li>For more precise control, After Effects with the Bodymovin plugin is recommended.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <dotlottie-player src="https://lottie.host/589f8abb-0754-4141-8f33-e2560c126a3a/DWIWG2FcqZ.json" background="transparent" speed="1" style="width: 600px; height: 600px;" loop autoplay></dotlottie-player>
+        </div>
+    </section>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+</body>
+</html>

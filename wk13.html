@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style9.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Week13</title>
+</head>
+<body>
+    <a href="index.html" id="home"><span class="material-symbols-outlined">arrow_back</span>Back to Home</a>
+    <section class="container">
+        <div class="text">
+            <h1>Best Practices - Common Mistakes</h1>
+            <h2>From this lesson, I learnt about:</h2>
+            <br>
+            <div class="collapsible_non-technical">
+                <input type="checkbox" id="collapsible-head_non-technical">
+                <label for="collapsible-head_non-technical">Common Questions & Issues:<span class="material-symbols-outlined">expand_more</span></label>
+                <div class="collapsible-text_non-technical">
+                    <ol>
+                        <li><b>Acknowledgement (README):</b>
+                            <ul>
+                                <li>Acknowledge those who contributed to the project's success, including mentors, classmates, inspirations, idea contributors, testers, and knowledge sharers.</li>
+                                <li>Add an acknowledgment section in the README.md file.</li>
+                            </ul>
+                        </li>
+                        <li><b>Mixed Content Error:</b>
+                            <ul>
+                                <li>Problem: Mixed content error when accessing an API with HTTP on HTTPS sites.</li>
+                                <li>Solutions: Test API for HTTPS compatibility, use a CORS fix (e.g., cors-anywhere) for API endpoint, check API documentation and errors.</li>
+                            </ul>
+                        </li>
+                        <li><b>API Testing Issues:</b>
+                            <ul>
+                                <li>Problem: API works in Postman but not in code.</li>
+                                <li>Solutions: Check API documentation, whitelist domains if required, inspect console and network logs for errors.</li>
+                            </ul>
+                        </li>
+                        <li><b>RapidAPI Usage Issues:</b>
+                            <ul>
+                                <li>Problem: Issues with free RapidAPI endpoints.</li>
+                                <li>Solutions: Subscribe to endpoints, handle hard limits (e.g., using Postman, extracting JSON to a file, using AJAX to access local JSON).</li>
+                            </ul>
+                        </li>
+                        <li><b>Chart JS Usage:</b>
+                            <ul>
+                                <li>Question: Can Chart JS fulfill API requirements?</li>
+                                <li>Guidelines: Ensure dynamic data usage, document rationale in README.</li>
+                            </ul>
+                        </li>
+                        <li><b>CSS Framework Usage:</b>
+                            <ul>
+                                <li>Question: Can Material.io or other frameworks be used?</li>
+                                <li>Guidelines: Allowed, justify usage, ensure responsiveness, document design choices.</li>
+                            </ul>
+                        </li>
+                        <li><b>Using External JSON Files:</b>
+                            <ul>
+                                <li>Question: Can JSON files from other websites be used?</li>
+                                <li>Guidelines: Allowed if publicly accessible, use proper AJAX techniques.</li>
+                            </ul>
+                        </li>
+                        <li><b>API Failure Handling:</b>
+                            <ul>
+                                <li>Problem: API failure.</li>
+                                <li>Solutions: Rework idea or use alternative API, test in Postman, check documentation, handle CORS issues.</li>
+                            </ul>
+                        </li>
+                        <li><b>Troubleshooting Tips:</b>
+                            <ul>
+                                <li>Problem: Code not working.</li>
+                                <li>Tips: Check console output, describe situation and attempts made when seeking help, avoid just pasting screenshots, provide code links.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="wk13-pic.jpg" alt="Web Developer Image" id="image">
+        </div>
+    </section>
+</body>
+</html>

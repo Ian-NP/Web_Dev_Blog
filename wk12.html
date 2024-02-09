@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style12.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Week12</title>
+</head>
+<body>
+    <a href="index.html" id="home"><span class="material-symbols-outlined">arrow_back</span>Back to Home</a>
+    <section class="container">
+        <div class="text">
+            <h1>RESTDB & NOSQL</h1>
+            <h2>From this lesson, I learnt about:</h2>
+            <br>
+            <div class="collapsible_non-technical">
+                <input type="checkbox" id="collapsible-head_non-technical">
+                <label for="collapsible-head_non-technical">SQL (Structured Query Language)<span class="material-symbols-outlined">expand_more</span></label>
+                <div class="collapsible-text_non-technical">
+                    <ol>
+                        <li><b>SQL serves as the backbone of relational databases, offering a robust framework for accessing and managing structured data. It operates primarily with tables and enforces relationships between them. </b></li>
+                        <li><b>Structured Data Format:</b>
+                            <ul>
+                                <li>SQL databases organize data into tables with predefined schemas.</li>
+                                <li>This structured approach ensures data integrity and facilitates efficient querying.</li>
+                            </ul>
+                        </li>
+                        <li><b>Relationships:</b>
+                            <ul>
+                                <li>SQL databases rely heavily on relationships between tables, maintained through foreign keys. </li>
+                                <li>This allows for complex queries and ensures data consistency.</li>
+                            </ul>
+                        </li>
+                        <li><b>Common Examples:</b>
+                            <ul>
+                                <li>Popular SQL databases include MySQL, PostgreSQL, and Microsoft SQL Server.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="collapsible_technical-html">
+                <input type="checkbox" id="collapsible-head_technical-html">
+                <label for="collapsible-head_technical-html">NoSQL (Not Only SQL)<span class="material-symbols-outlined">expand_more</span></label>
+                <div class="collapsible-text_technical-html">
+                    <ol>
+                        <li><b>NoSQL databases depart from the traditional relational model, offering flexibility and scalability for handling unstructured or semi-structured data. They eschew rigid schemas and emphasize horizontal scalability.</b></li>
+                        <li><b>Unstructured Data Handling: </b>
+                            <ul>
+                                <li>NoSQL databases excel at managing unstructured or semi-structured data, such as JSON documents.</li>
+                                <li>They organize data into collections rather than tables, providing a more flexible data model.</li>
+                            </ul>
+                        </li>
+                        <li><b>Dynamic Schema:</b>
+                            <ul>
+                                <li>Unlike SQL databases, NoSQL databases feature dynamic schemas, allowing for agile development and accommodating evolving data requirements.</li>
+                            </ul>
+                        </li>
+                        <li><b>Scalability: </b>
+                            <ul>
+                                <li>NoSQL databases are designed for horizontal scalability, enabling them to handle massive volumes of data across distributed systems with ease.</li>
+                            </ul>
+                        </li>
+                        <li><b>Examples:</b>
+                            <ul>
+                                <li>Prominent NoSQL databases include MongoDB, Cassandra, RestDB and Redis.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="collapsible_technical-css">
+                <input type="checkbox" id="collapsible-head_technical-css">
+                <label for="collapsible-head_technical-css">Key Differences (NOSQL VS SQL)<span class="material-symbols-outlined">expand_more</span></label>
+                <div class="collapsible-text_technical-css">
+                    <ol>
+                        <li><b>Data Model: </b>
+                            <ul>
+                                <li>SQL databases employ a tabular structure with predefined schemas, whereas NoSQL databases use flexible document-oriented or key-value pair models.</li>
+                                <li>It provides a way to persistently store key-value pairs locally on the client side.</li>
+                            </ul>
+                        </li>
+                        <li><b>Query Language:</b>
+                            <ul>
+                                <li>SQL databases utilize the SQL query language for data manipulation and retrieval, while NoSQL databases may have proprietary query languages or rely on APIs for interaction.</li>
+                            </ul>
+                        </li>
+                        <li><b>Scalability and Performance: </b>
+                            <ul>
+                                <li>NoSQL databases excel at horizontal scalability and can efficiently handle large volumes of data and high throughput, making them suitable for applications requiring real-time analytics or massive-scale data storage.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="wk12-pic.png" alt="SQL-VS-NOSQL" id="image">
+        </div>
+    </section>
+</body>
+</html>

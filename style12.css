@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;   
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    margin: 0px 50px;
+}
+
+.material-symbols-outlined{
+    display: inline-flex;
+    vertical-align: top;
+}
+
+#home{
+    text-decoration: none;
+    font-size:20px;
+    line-height:87px;
+    color:#888888
+}
+
+#home > span {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer
+}
+
+#home:hover {
+    color: #674188;
+    transition: all 0.3s ease-in-out
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    align-items: center;
+    display: flex; /* or inline-flex */
+    flex-direction:row;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    gap: 50px;
+    left: 50%;
+    top: 50%;
+    width: 75%;
+}
+
+img {
+    object-fit: cover;
+    width: 475px;
+    height: 375px;
+    overflow: hidden;
+    border-radius: 100px;
+    box-shadow: 4px 10px 10px 1px #888888;
+}
+
+.text {
+    margin-right: 50px;;
+}
+
+.text h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/* COLLAPSIBLE_NON-TECHNICAL*/
+
+.collapsible_non-technical{
+    max-width: 100%;
+    overflow: hidden;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+.collapsible_non-technical input {
+    display: none;
+}
+
+.collapsible_non-technical label{
+    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+    background: rgb(232, 232, 232);
+    color: rgb(200, 32, 200);
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible_non-technical span{
+    position: absolute;
+    right: 15px;
+    top: 13px;
+}
+
+.collapsible_non-technical label:after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+}
+
+.collapsible_non-technical input:checked + label:after{
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.collapsible-text_non-technical{
+    max-height: 0px;
+    overflow: scroll;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.collapsible_non-technical input:checked ~ .collapsible-text_non-technical {
+    max-height: 300px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background: rgb(234, 234, 234);
+}
+
+.collapsible-text_non-technical ul{
+    list-style-type:disc;
+    padding: 0 30px;
+    margin-top: 10px;
+}
+
+.collapsible-text_non-technical li{
+    margin-bottom: 15px;
+}
+
+
+/*----------------------------------------------------------------------------------------------*/
+/* COLLAPSIBLE_TECHNICAL-HTML*/
+
+.collapsible_technical-html{
+    max-width: 100%;
+    height:100%;
+    overflow:hidden;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.collapsible_technical-html input {
+    display: none;
+}
+
+.collapsible_technical-html label{
+    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+    background: rgb(232, 232, 232);
+    color: rgb(200, 32, 200);
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible_technical-html span{
+    position: absolute;
+    right: 15px;
+    top: 13px;
+}
+
+.collapsible_technical-html label:after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+}
+
+.collapsible_technical-html input:checked + label:after{
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.collapsible-text_technical-html{
+    max-height: 0px;
+    overflow: scroll;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.collapsible_technical-html input:checked ~ .collapsible-text_technical-html {
+    max-height: 300px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background: rgb(234, 234, 234);
+}
+
+.collapsible-text_technical-html ul{
+    list-style-type:disc;
+    padding: 0 30px;
+    margin-top: 10px;
+}
+
+.collapsible-text_technical-html li{
+    margin-bottom: 15px;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/* COLLAPSIBLE_TECHNICAL-CSS*/
+
+.collapsible_technical-css{
+    max-width: 100%;
+    height:100%;
+    overflow:hidden;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.collapsible_technical-css input {
+    display: none;
+}
+
+.collapsible_technical-css label{
+    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+    background: rgb(232, 232, 232);
+    color: rgb(200, 32, 200);
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible_technical-css span{
+    position: absolute;
+    right: 15px;
+    top: 13px;
+}
+
+.collapsible_technical-css label:after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+}
+
+.collapsible_technical-css input:checked + label:after{
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.collapsible-text_technical-css{
+    max-height: 0px;
+    overflow: scroll;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.collapsible_technical-css input:checked ~ .collapsible-text_technical-css {
+    max-height: 300px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background: rgb(234, 234, 234);
+}
+
+.collapsible-text_technical-css ul{
+    list-style-type:disc;
+    padding: 0 30px;
+    margin-top: 10px;
+}
+
+.collapsible-text_technical-css li{
+    margin-bottom: 15px;
+}
+
+/*----------------------------------------------------------------------------------------------*/
